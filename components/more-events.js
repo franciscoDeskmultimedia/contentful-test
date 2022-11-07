@@ -16,6 +16,7 @@ export default function MoreEvents({ posts }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.eventDescription}
+            type='events'
           />
         ))}
       </div>

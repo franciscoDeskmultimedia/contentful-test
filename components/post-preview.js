@@ -10,6 +10,7 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
+  type
 }) {
   return (
     <div>
@@ -17,7 +18,7 @@ export default function PostPreview({
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
-        <Link href={`/posts/${slug}`} className="hover:underline">
+        <Link href={`/${type}/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
